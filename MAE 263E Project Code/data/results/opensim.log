@@ -1,0 +1,1285 @@
+[2025-10-11 20:45:55.916] [info] Updating Model file from 40000 to latest format...
+[2025-10-11 20:45:55.940] [info] Loaded model 3DGaitModel2392 from file C:\Users\natha\Documents\OpenSim\4.5\Models\Gait2392_Simbody\gait2392_simbody.osim
+[2025-10-11 22:30:34.370] [warning] Running tool 3DGaitModel2392...
+[2025-10-11 22:30:34.375] [info] No external loads will be applied (external loads file not specified).
+[2025-10-11 22:30:34.397] [cout] [info] MODEL: 3DGaitModel2392
+
+numStates = 230
+numCoordinates = 23
+numSpeeds = 23
+numActuators = 92
+numBodies = 12
+numConstraints = 0
+numProbes = 0
+
+ANALYSES (total: 2)
+analysis[0] = Un-named analysis.
+analysis[1] = Un-named analysis.
+
+BODIES (total: 12)
+body[0] = pelvis. mass: 11.777
+              moments of inertia:  ~[0.1028,0.0871,0.0579]
+              products of inertia: ~[0,0,0]
+body[1] = femur_r. mass: 9.3014
+              moments of inertia:  ~[0.1339,0.0351,0.1412]
+              products of inertia: ~[0,0,0]
+body[2] = tibia_r. mass: 3.7075
+              moments of inertia:  ~[0.0504,0.0051,0.0511]
+              products of inertia: ~[0,0,0]
+body[3] = talus_r. mass: 0.1
+              moments of inertia:  ~[0.001,0.001,0.001]
+              products of inertia: ~[0,0,0]
+body[4] = calcn_r. mass: 1.25
+              moments of inertia:  ~[0.0014,0.0039,0.0041]
+              products of inertia: ~[0,0,0]
+body[5] = toes_r. mass: 0.2166
+              moments of inertia:  ~[0.0001,0.0002,0.0001]
+              products of inertia: ~[0,0,0]
+body[6] = femur_l. mass: 9.3014
+              moments of inertia:  ~[0.1339,0.0351,0.1412]
+              products of inertia: ~[0,0,0]
+body[7] = tibia_l. mass: 3.7075
+              moments of inertia:  ~[0.0504,0.0051,0.0511]
+              products of inertia: ~[0,0,0]
+body[8] = talus_l. mass: 0.1
+              moments of inertia:  ~[0.001,0.001,0.001]
+              products of inertia: ~[0,0,0]
+body[9] = calcn_l. mass: 1.25
+              moments of inertia:  ~[0.0014,0.0039,0.0041]
+              products of inertia: ~[0,0,0]
+body[10] = toes_l. mass: 0.2166
+              moments of inertia:  ~[0.0001,0.0002,0.0001]
+              products of inertia: ~[0,0,0]
+body[11] = torso. mass: 34.2366
+              moments of inertia:  ~[1.4745,0.7555,1.4314]
+              products of inertia: ~[0,0,0]
+
+JOINTS (total: 12)
+joint[0] = ground_pelvis. parent: ground_offset, child: pelvis_offset
+joint[1] = hip_r. parent: pelvis_offset, child: femur_r_offset
+joint[2] = knee_r. parent: femur_r_offset, child: tibia_r_offset
+joint[3] = ankle_r. parent: tibia_r_offset, child: talus_r_offset
+joint[4] = subtalar_r. parent: talus_r_offset, child: calcn_r_offset
+joint[5] = mtp_r. parent: calcn_r_offset, child: toes_r_offset
+joint[6] = hip_l. parent: pelvis_offset, child: femur_l_offset
+joint[7] = knee_l. parent: femur_l_offset, child: tibia_l_offset
+joint[8] = ankle_l. parent: tibia_l_offset, child: talus_l_offset
+joint[9] = subtalar_l. parent: talus_l_offset, child: calcn_l_offset
+joint[10] = mtp_l. parent: calcn_l_offset, child: toes_l_offset
+joint[11] = back. parent: pelvis_offset, child: torso_offset
+
+ACTUATORS (total: 92)
+actuator[0] = glut_med1_r
+actuator[1] = glut_med2_r
+actuator[2] = glut_med3_r
+actuator[3] = glut_min1_r
+actuator[4] = glut_min2_r
+actuator[5] = glut_min3_r
+actuator[6] = semimem_r
+actuator[7] = semiten_r
+actuator[8] = bifemlh_r
+actuator[9] = bifemsh_r
+actuator[10] = sar_r
+actuator[11] = add_long_r
+actuator[12] = add_brev_r
+actuator[13] = add_mag1_r
+actuator[14] = add_mag2_r
+actuator[15] = add_mag3_r
+actuator[16] = tfl_r
+actuator[17] = pect_r
+actuator[18] = grac_r
+actuator[19] = glut_max1_r
+actuator[20] = glut_max2_r
+actuator[21] = glut_max3_r
+actuator[22] = iliacus_r
+actuator[23] = psoas_r
+actuator[24] = quad_fem_r
+actuator[25] = gem_r
+actuator[26] = peri_r
+actuator[27] = rect_fem_r
+actuator[28] = vas_med_r
+actuator[29] = vas_int_r
+actuator[30] = vas_lat_r
+actuator[31] = med_gas_r
+actuator[32] = lat_gas_r
+actuator[33] = soleus_r
+actuator[34] = tib_post_r
+actuator[35] = flex_dig_r
+actuator[36] = flex_hal_r
+actuator[37] = tib_ant_r
+actuator[38] = per_brev_r
+actuator[39] = per_long_r
+actuator[40] = per_tert_r
+actuator[41] = ext_dig_r
+actuator[42] = ext_hal_r
+actuator[43] = glut_med1_l
+actuator[44] = glut_med2_l
+actuator[45] = glut_med3_l
+actuator[46] = glut_min1_l
+actuator[47] = glut_min2_l
+actuator[48] = glut_min3_l
+actuator[49] = semimem_l
+actuator[50] = semiten_l
+actuator[51] = bifemlh_l
+actuator[52] = bifemsh_l
+actuator[53] = sar_l
+actuator[54] = add_long_l
+actuator[55] = add_brev_l
+actuator[56] = add_mag1_l
+actuator[57] = add_mag2_l
+actuator[58] = add_mag3_l
+actuator[59] = tfl_l
+actuator[60] = pect_l
+actuator[61] = grac_l
+actuator[62] = glut_max1_l
+actuator[63] = glut_max2_l
+actuator[64] = glut_max3_l
+actuator[65] = iliacus_l
+actuator[66] = psoas_l
+actuator[67] = quad_fem_l
+actuator[68] = gem_l
+actuator[69] = peri_l
+actuator[70] = rect_fem_l
+actuator[71] = vas_med_l
+actuator[72] = vas_int_l
+actuator[73] = vas_lat_l
+actuator[74] = med_gas_l
+actuator[75] = lat_gas_l
+actuator[76] = soleus_l
+actuator[77] = tib_post_l
+actuator[78] = flex_dig_l
+actuator[79] = flex_hal_l
+actuator[80] = tib_ant_l
+actuator[81] = per_brev_l
+actuator[82] = per_long_l
+actuator[83] = per_tert_l
+actuator[84] = ext_dig_l
+actuator[85] = ext_hal_l
+actuator[86] = ercspn_r
+actuator[87] = ercspn_l
+actuator[88] = intobl_r
+actuator[89] = intobl_l
+actuator[90] = extobl_r
+actuator[91] = extobl_l
+
+STATES (total: 230)
+y[0] = /jointset/ground_pelvis/pelvis_tilt/value
+y[1] = /jointset/ground_pelvis/pelvis_tilt/speed
+y[2] = /jointset/ground_pelvis/pelvis_list/value
+y[3] = /jointset/ground_pelvis/pelvis_list/speed
+y[4] = /jointset/ground_pelvis/pelvis_rotation/value
+y[5] = /jointset/ground_pelvis/pelvis_rotation/speed
+y[6] = /jointset/ground_pelvis/pelvis_tx/value
+y[7] = /jointset/ground_pelvis/pelvis_tx/speed
+y[8] = /jointset/ground_pelvis/pelvis_ty/value
+y[9] = /jointset/ground_pelvis/pelvis_ty/speed
+y[10] = /jointset/ground_pelvis/pelvis_tz/value
+y[11] = /jointset/ground_pelvis/pelvis_tz/speed
+y[12] = /jointset/hip_r/hip_flexion_r/value
+y[13] = /jointset/hip_r/hip_flexion_r/speed
+y[14] = /jointset/hip_r/hip_adduction_r/value
+y[15] = /jointset/hip_r/hip_adduction_r/speed
+y[16] = /jointset/hip_r/hip_rotation_r/value
+y[17] = /jointset/hip_r/hip_rotation_r/speed
+y[18] = /jointset/knee_r/knee_angle_r/value
+y[19] = /jointset/knee_r/knee_angle_r/speed
+y[20] = /jointset/ankle_r/ankle_angle_r/value
+y[21] = /jointset/ankle_r/ankle_angle_r/speed
+y[22] = /jointset/subtalar_r/subtalar_angle_r/value
+y[23] = /jointset/subtalar_r/subtalar_angle_r/speed
+y[24] = /jointset/mtp_r/mtp_angle_r/value
+y[25] = /jointset/mtp_r/mtp_angle_r/speed
+y[26] = /jointset/hip_l/hip_flexion_l/value
+y[27] = /jointset/hip_l/hip_flexion_l/speed
+y[28] = /jointset/hip_l/hip_adduction_l/value
+y[29] = /jointset/hip_l/hip_adduction_l/speed
+y[30] = /jointset/hip_l/hip_rotation_l/value
+y[31] = /jointset/hip_l/hip_rotation_l/speed
+y[32] = /jointset/knee_l/knee_angle_l/value
+y[33] = /jointset/knee_l/knee_angle_l/speed
+y[34] = /jointset/ankle_l/ankle_angle_l/value
+y[35] = /jointset/ankle_l/ankle_angle_l/speed
+y[36] = /jointset/subtalar_l/subtalar_angle_l/value
+y[37] = /jointset/subtalar_l/subtalar_angle_l/speed
+y[38] = /jointset/mtp_l/mtp_angle_l/value
+y[39] = /jointset/mtp_l/mtp_angle_l/speed
+y[40] = /jointset/back/lumbar_extension/value
+y[41] = /jointset/back/lumbar_extension/speed
+y[42] = /jointset/back/lumbar_bending/value
+y[43] = /jointset/back/lumbar_bending/speed
+y[44] = /jointset/back/lumbar_rotation/value
+y[45] = /jointset/back/lumbar_rotation/speed
+y[46] = /forceset/glut_med1_r/activation
+y[47] = /forceset/glut_med1_r/fiber_length
+y[48] = /forceset/glut_med2_r/activation
+y[49] = /forceset/glut_med2_r/fiber_length
+y[50] = /forceset/glut_med3_r/activation
+y[51] = /forceset/glut_med3_r/fiber_length
+y[52] = /forceset/glut_min1_r/activation
+y[53] = /forceset/glut_min1_r/fiber_length
+y[54] = /forceset/glut_min2_r/activation
+y[55] = /forceset/glut_min2_r/fiber_length
+y[56] = /forceset/glut_min3_r/activation
+y[57] = /forceset/glut_min3_r/fiber_length
+y[58] = /forceset/semimem_r/activation
+y[59] = /forceset/semimem_r/fiber_length
+y[60] = /forceset/semiten_r/activation
+y[61] = /forceset/semiten_r/fiber_length
+y[62] = /forceset/bifemlh_r/activation
+y[63] = /forceset/bifemlh_r/fiber_length
+y[64] = /forceset/bifemsh_r/activation
+y[65] = /forceset/bifemsh_r/fiber_length
+y[66] = /forceset/sar_r/activation
+y[67] = /forceset/sar_r/fiber_length
+y[68] = /forceset/add_long_r/activation
+y[69] = /forceset/add_long_r/fiber_length
+y[70] = /forceset/add_brev_r/activation
+y[71] = /forceset/add_brev_r/fiber_length
+y[72] = /forceset/add_mag1_r/activation
+y[73] = /forceset/add_mag1_r/fiber_length
+y[74] = /forceset/add_mag2_r/activation
+y[75] = /forceset/add_mag2_r/fiber_length
+y[76] = /forceset/add_mag3_r/activation
+y[77] = /forceset/add_mag3_r/fiber_length
+y[78] = /forceset/tfl_r/activation
+y[79] = /forceset/tfl_r/fiber_length
+y[80] = /forceset/pect_r/activation
+y[81] = /forceset/pect_r/fiber_length
+y[82] = /forceset/grac_r/activation
+y[83] = /forceset/grac_r/fiber_length
+y[84] = /forceset/glut_max1_r/activation
+y[85] = /forceset/glut_max1_r/fiber_length
+y[86] = /forceset/glut_max2_r/activation
+y[87] = /forceset/glut_max2_r/fiber_length
+y[88] = /forceset/glut_max3_r/activation
+y[89] = /forceset/glut_max3_r/fiber_length
+y[90] = /forceset/iliacus_r/activation
+y[91] = /forceset/iliacus_r/fiber_length
+y[92] = /forceset/psoas_r/activation
+y[93] = /forceset/psoas_r/fiber_length
+y[94] = /forceset/quad_fem_r/activation
+y[95] = /forceset/quad_fem_r/fiber_length
+y[96] = /forceset/gem_r/activation
+y[97] = /forceset/gem_r/fiber_length
+y[98] = /forceset/peri_r/activation
+y[99] = /forceset/peri_r/fiber_length
+y[100] = /forceset/rect_fem_r/activation
+y[101] = /forceset/rect_fem_r/fiber_length
+y[102] = /forceset/vas_med_r/activation
+y[103] = /forceset/vas_med_r/fiber_length
+y[104] = /forceset/vas_int_r/activation
+y[105] = /forceset/vas_int_r/fiber_length
+y[106] = /forceset/vas_lat_r/activation
+y[107] = /forceset/vas_lat_r/fiber_length
+y[108] = /forceset/med_gas_r/activation
+y[109] = /forceset/med_gas_r/fiber_length
+y[110] = /forceset/lat_gas_r/activation
+y[111] = /forceset/lat_gas_r/fiber_length
+y[112] = /forceset/soleus_r/activation
+y[113] = /forceset/soleus_r/fiber_length
+y[114] = /forceset/tib_post_r/activation
+y[115] = /forceset/tib_post_r/fiber_length
+y[116] = /forceset/flex_dig_r/activation
+y[117] = /forceset/flex_dig_r/fiber_length
+y[118] = /forceset/flex_hal_r/activation
+y[119] = /forceset/flex_hal_r/fiber_length
+y[120] = /forceset/tib_ant_r/activation
+y[121] = /forceset/tib_ant_r/fiber_length
+y[122] = /forceset/per_brev_r/activation
+y[123] = /forceset/per_brev_r/fiber_length
+y[124] = /forceset/per_long_r/activation
+y[125] = /forceset/per_long_r/fiber_length
+y[126] = /forceset/per_tert_r/activation
+y[127] = /forceset/per_tert_r/fiber_length
+y[128] = /forceset/ext_dig_r/activation
+y[129] = /forceset/ext_dig_r/fiber_length
+y[130] = /forceset/ext_hal_r/activation
+y[131] = /forceset/ext_hal_r/fiber_length
+y[132] = /forceset/glut_med1_l/activation
+y[133] = /forceset/glut_med1_l/fiber_length
+y[134] = /forceset/glut_med2_l/activation
+y[135] = /forceset/glut_med2_l/fiber_length
+y[136] = /forceset/glut_med3_l/activation
+y[137] = /forceset/glut_med3_l/fiber_length
+y[138] = /forceset/glut_min1_l/activation
+y[139] = /forceset/glut_min1_l/fiber_length
+y[140] = /forceset/glut_min2_l/activation
+y[141] = /forceset/glut_min2_l/fiber_length
+y[142] = /forceset/glut_min3_l/activation
+y[143] = /forceset/glut_min3_l/fiber_length
+y[144] = /forceset/semimem_l/activation
+y[145] = /forceset/semimem_l/fiber_length
+y[146] = /forceset/semiten_l/activation
+y[147] = /forceset/semiten_l/fiber_length
+y[148] = /forceset/bifemlh_l/activation
+y[149] = /forceset/bifemlh_l/fiber_length
+y[150] = /forceset/bifemsh_l/activation
+y[151] = /forceset/bifemsh_l/fiber_length
+y[152] = /forceset/sar_l/activation
+y[153] = /forceset/sar_l/fiber_length
+y[154] = /forceset/add_long_l/activation
+y[155] = /forceset/add_long_l/fiber_length
+y[156] = /forceset/add_brev_l/activation
+y[157] = /forceset/add_brev_l/fiber_length
+y[158] = /forceset/add_mag1_l/activation
+y[159] = /forceset/add_mag1_l/fiber_length
+y[160] = /forceset/add_mag2_l/activation
+y[161] = /forceset/add_mag2_l/fiber_length
+y[162] = /forceset/add_mag3_l/activation
+y[163] = /forceset/add_mag3_l/fiber_length
+y[164] = /forceset/tfl_l/activation
+y[165] = /forceset/tfl_l/fiber_length
+y[166] = /forceset/pect_l/activation
+y[167] = /forceset/pect_l/fiber_length
+y[168] = /forceset/grac_l/activation
+y[169] = /forceset/grac_l/fiber_length
+y[170] = /forceset/glut_max1_l/activation
+y[171] = /forceset/glut_max1_l/fiber_length
+y[172] = /forceset/glut_max2_l/activation
+y[173] = /forceset/glut_max2_l/fiber_length
+y[174] = /forceset/glut_max3_l/activation
+y[175] = /forceset/glut_max3_l/fiber_length
+y[176] = /forceset/iliacus_l/activation
+y[177] = /forceset/iliacus_l/fiber_length
+y[178] = /forceset/psoas_l/activation
+y[179] = /forceset/psoas_l/fiber_length
+y[180] = /forceset/quad_fem_l/activation
+y[181] = /forceset/quad_fem_l/fiber_length
+y[182] = /forceset/gem_l/activation
+y[183] = /forceset/gem_l/fiber_length
+y[184] = /forceset/peri_l/activation
+y[185] = /forceset/peri_l/fiber_length
+y[186] = /forceset/rect_fem_l/activation
+y[187] = /forceset/rect_fem_l/fiber_length
+y[188] = /forceset/vas_med_l/activation
+y[189] = /forceset/vas_med_l/fiber_length
+y[190] = /forceset/vas_int_l/activation
+y[191] = /forceset/vas_int_l/fiber_length
+y[192] = /forceset/vas_lat_l/activation
+y[193] = /forceset/vas_lat_l/fiber_length
+y[194] = /forceset/med_gas_l/activation
+y[195] = /forceset/med_gas_l/fiber_length
+y[196] = /forceset/lat_gas_l/activation
+y[197] = /forceset/lat_gas_l/fiber_length
+y[198] = /forceset/soleus_l/activation
+y[199] = /forceset/soleus_l/fiber_length
+y[200] = /forceset/tib_post_l/activation
+y[201] = /forceset/tib_post_l/fiber_length
+y[202] = /forceset/flex_dig_l/activation
+y[203] = /forceset/flex_dig_l/fiber_length
+y[204] = /forceset/flex_hal_l/activation
+y[205] = /forceset/flex_hal_l/fiber_length
+y[206] = /forceset/tib_ant_l/activation
+y[207] = /forceset/tib_ant_l/fiber_length
+y[208] = /forceset/per_brev_l/activation
+y[209] = /forceset/per_brev_l/fiber_length
+y[210] = /forceset/per_long_l/activation
+y[211] = /forceset/per_long_l/fiber_length
+y[212] = /forceset/per_tert_l/activation
+y[213] = /forceset/per_tert_l/fiber_length
+y[214] = /forceset/ext_dig_l/activation
+y[215] = /forceset/ext_dig_l/fiber_length
+y[216] = /forceset/ext_hal_l/activation
+y[217] = /forceset/ext_hal_l/fiber_length
+y[218] = /forceset/ercspn_r/activation
+y[219] = /forceset/ercspn_r/fiber_length
+y[220] = /forceset/ercspn_l/activation
+y[221] = /forceset/ercspn_l/fiber_length
+y[222] = /forceset/intobl_r/activation
+y[223] = /forceset/intobl_r/fiber_length
+y[224] = /forceset/intobl_l/activation
+y[225] = /forceset/intobl_l/fiber_length
+y[226] = /forceset/extobl_r/activation
+y[227] = /forceset/extobl_r/fiber_length
+y[228] = /forceset/extobl_l/activation
+y[229] = /forceset/extobl_l/fiber_length
+
+[2025-10-11 22:30:34.398] [info] Integrating from 0.0 to 5.0.
+[2025-10-11 22:30:35.187] [error] ForwardTool::run() caught an exception: 
+ Operation Aborted
+[2025-10-11 22:45:18.372] [warning] Running tool 3DGaitModel2392...
+[2025-10-11 22:45:18.372] [info] No external loads will be applied (external loads file not specified).
+[2025-10-11 22:45:18.392] [cout] [info] MODEL: 3DGaitModel2392
+
+numStates = 230
+numCoordinates = 23
+numSpeeds = 23
+numActuators = 92
+numBodies = 12
+numConstraints = 0
+numProbes = 0
+
+ANALYSES (total: 2)
+analysis[0] = Un-named analysis.
+analysis[1] = Un-named analysis.
+
+BODIES (total: 12)
+body[0] = pelvis. mass: 11.777
+              moments of inertia:  ~[0.1028,0.0871,0.0579]
+              products of inertia: ~[0,0,0]
+body[1] = femur_r. mass: 9.3014
+              moments of inertia:  ~[0.1339,0.0351,0.1412]
+              products of inertia: ~[0,0,0]
+body[2] = tibia_r. mass: 3.7075
+              moments of inertia:  ~[0.0504,0.0051,0.0511]
+              products of inertia: ~[0,0,0]
+body[3] = talus_r. mass: 0.1
+              moments of inertia:  ~[0.001,0.001,0.001]
+              products of inertia: ~[0,0,0]
+body[4] = calcn_r. mass: 1.25
+              moments of inertia:  ~[0.0014,0.0039,0.0041]
+              products of inertia: ~[0,0,0]
+body[5] = toes_r. mass: 0.2166
+              moments of inertia:  ~[0.0001,0.0002,0.0001]
+              products of inertia: ~[0,0,0]
+body[6] = femur_l. mass: 9.3014
+              moments of inertia:  ~[0.1339,0.0351,0.1412]
+              products of inertia: ~[0,0,0]
+body[7] = tibia_l. mass: 3.7075
+              moments of inertia:  ~[0.0504,0.0051,0.0511]
+              products of inertia: ~[0,0,0]
+body[8] = talus_l. mass: 0.1
+              moments of inertia:  ~[0.001,0.001,0.001]
+              products of inertia: ~[0,0,0]
+body[9] = calcn_l. mass: 1.25
+              moments of inertia:  ~[0.0014,0.0039,0.0041]
+              products of inertia: ~[0,0,0]
+body[10] = toes_l. mass: 0.2166
+              moments of inertia:  ~[0.0001,0.0002,0.0001]
+              products of inertia: ~[0,0,0]
+body[11] = torso. mass: 34.2366
+              moments of inertia:  ~[1.4745,0.7555,1.4314]
+              products of inertia: ~[0,0,0]
+
+JOINTS (total: 12)
+joint[0] = ground_pelvis. parent: ground_offset, child: pelvis_offset
+joint[1] = hip_r. parent: pelvis_offset, child: femur_r_offset
+joint[2] = knee_r. parent: femur_r_offset, child: tibia_r_offset
+joint[3] = ankle_r. parent: tibia_r_offset, child: talus_r_offset
+joint[4] = subtalar_r. parent: talus_r_offset, child: calcn_r_offset
+joint[5] = mtp_r. parent: calcn_r_offset, child: toes_r_offset
+joint[6] = hip_l. parent: pelvis_offset, child: femur_l_offset
+joint[7] = knee_l. parent: femur_l_offset, child: tibia_l_offset
+joint[8] = ankle_l. parent: tibia_l_offset, child: talus_l_offset
+joint[9] = subtalar_l. parent: talus_l_offset, child: calcn_l_offset
+joint[10] = mtp_l. parent: calcn_l_offset, child: toes_l_offset
+joint[11] = back. parent: pelvis_offset, child: torso_offset
+
+ACTUATORS (total: 92)
+actuator[0] = glut_med1_r
+actuator[1] = glut_med2_r
+actuator[2] = glut_med3_r
+actuator[3] = glut_min1_r
+actuator[4] = glut_min2_r
+actuator[5] = glut_min3_r
+actuator[6] = semimem_r
+actuator[7] = semiten_r
+actuator[8] = bifemlh_r
+actuator[9] = bifemsh_r
+actuator[10] = sar_r
+actuator[11] = add_long_r
+actuator[12] = add_brev_r
+actuator[13] = add_mag1_r
+actuator[14] = add_mag2_r
+actuator[15] = add_mag3_r
+actuator[16] = tfl_r
+actuator[17] = pect_r
+actuator[18] = grac_r
+actuator[19] = glut_max1_r
+actuator[20] = glut_max2_r
+actuator[21] = glut_max3_r
+actuator[22] = iliacus_r
+actuator[23] = psoas_r
+actuator[24] = quad_fem_r
+actuator[25] = gem_r
+actuator[26] = peri_r
+actuator[27] = rect_fem_r
+actuator[28] = vas_med_r
+actuator[29] = vas_int_r
+actuator[30] = vas_lat_r
+actuator[31] = med_gas_r
+actuator[32] = lat_gas_r
+actuator[33] = soleus_r
+actuator[34] = tib_post_r
+actuator[35] = flex_dig_r
+actuator[36] = flex_hal_r
+actuator[37] = tib_ant_r
+actuator[38] = per_brev_r
+actuator[39] = per_long_r
+actuator[40] = per_tert_r
+actuator[41] = ext_dig_r
+actuator[42] = ext_hal_r
+actuator[43] = glut_med1_l
+actuator[44] = glut_med2_l
+actuator[45] = glut_med3_l
+actuator[46] = glut_min1_l
+actuator[47] = glut_min2_l
+actuator[48] = glut_min3_l
+actuator[49] = semimem_l
+actuator[50] = semiten_l
+actuator[51] = bifemlh_l
+actuator[52] = bifemsh_l
+actuator[53] = sar_l
+actuator[54] = add_long_l
+actuator[55] = add_brev_l
+actuator[56] = add_mag1_l
+actuator[57] = add_mag2_l
+actuator[58] = add_mag3_l
+actuator[59] = tfl_l
+actuator[60] = pect_l
+actuator[61] = grac_l
+actuator[62] = glut_max1_l
+actuator[63] = glut_max2_l
+actuator[64] = glut_max3_l
+actuator[65] = iliacus_l
+actuator[66] = psoas_l
+actuator[67] = quad_fem_l
+actuator[68] = gem_l
+actuator[69] = peri_l
+actuator[70] = rect_fem_l
+actuator[71] = vas_med_l
+actuator[72] = vas_int_l
+actuator[73] = vas_lat_l
+actuator[74] = med_gas_l
+actuator[75] = lat_gas_l
+actuator[76] = soleus_l
+actuator[77] = tib_post_l
+actuator[78] = flex_dig_l
+actuator[79] = flex_hal_l
+actuator[80] = tib_ant_l
+actuator[81] = per_brev_l
+actuator[82] = per_long_l
+actuator[83] = per_tert_l
+actuator[84] = ext_dig_l
+actuator[85] = ext_hal_l
+actuator[86] = ercspn_r
+actuator[87] = ercspn_l
+actuator[88] = intobl_r
+actuator[89] = intobl_l
+actuator[90] = extobl_r
+actuator[91] = extobl_l
+
+STATES (total: 230)
+y[0] = /jointset/ground_pelvis/pelvis_tilt/value
+y[1] = /jointset/ground_pelvis/pelvis_tilt/speed
+y[2] = /jointset/ground_pelvis/pelvis_list/value
+y[3] = /jointset/ground_pelvis/pelvis_list/speed
+y[4] = /jointset/ground_pelvis/pelvis_rotation/value
+y[5] = /jointset/ground_pelvis/pelvis_rotation/speed
+y[6] = /jointset/ground_pelvis/pelvis_tx/value
+y[7] = /jointset/ground_pelvis/pelvis_tx/speed
+y[8] = /jointset/ground_pelvis/pelvis_ty/value
+y[9] = /jointset/ground_pelvis/pelvis_ty/speed
+y[10] = /jointset/ground_pelvis/pelvis_tz/value
+y[11] = /jointset/ground_pelvis/pelvis_tz/speed
+y[12] = /jointset/hip_r/hip_flexion_r/value
+y[13] = /jointset/hip_r/hip_flexion_r/speed
+y[14] = /jointset/hip_r/hip_adduction_r/value
+y[15] = /jointset/hip_r/hip_adduction_r/speed
+y[16] = /jointset/hip_r/hip_rotation_r/value
+y[17] = /jointset/hip_r/hip_rotation_r/speed
+y[18] = /jointset/knee_r/knee_angle_r/value
+y[19] = /jointset/knee_r/knee_angle_r/speed
+y[20] = /jointset/ankle_r/ankle_angle_r/value
+y[21] = /jointset/ankle_r/ankle_angle_r/speed
+y[22] = /jointset/subtalar_r/subtalar_angle_r/value
+y[23] = /jointset/subtalar_r/subtalar_angle_r/speed
+y[24] = /jointset/mtp_r/mtp_angle_r/value
+y[25] = /jointset/mtp_r/mtp_angle_r/speed
+y[26] = /jointset/hip_l/hip_flexion_l/value
+y[27] = /jointset/hip_l/hip_flexion_l/speed
+y[28] = /jointset/hip_l/hip_adduction_l/value
+y[29] = /jointset/hip_l/hip_adduction_l/speed
+y[30] = /jointset/hip_l/hip_rotation_l/value
+y[31] = /jointset/hip_l/hip_rotation_l/speed
+y[32] = /jointset/knee_l/knee_angle_l/value
+y[33] = /jointset/knee_l/knee_angle_l/speed
+y[34] = /jointset/ankle_l/ankle_angle_l/value
+y[35] = /jointset/ankle_l/ankle_angle_l/speed
+y[36] = /jointset/subtalar_l/subtalar_angle_l/value
+y[37] = /jointset/subtalar_l/subtalar_angle_l/speed
+y[38] = /jointset/mtp_l/mtp_angle_l/value
+y[39] = /jointset/mtp_l/mtp_angle_l/speed
+y[40] = /jointset/back/lumbar_extension/value
+y[41] = /jointset/back/lumbar_extension/speed
+y[42] = /jointset/back/lumbar_bending/value
+y[43] = /jointset/back/lumbar_bending/speed
+y[44] = /jointset/back/lumbar_rotation/value
+y[45] = /jointset/back/lumbar_rotation/speed
+y[46] = /forceset/glut_med1_r/activation
+y[47] = /forceset/glut_med1_r/fiber_length
+y[48] = /forceset/glut_med2_r/activation
+y[49] = /forceset/glut_med2_r/fiber_length
+y[50] = /forceset/glut_med3_r/activation
+y[51] = /forceset/glut_med3_r/fiber_length
+y[52] = /forceset/glut_min1_r/activation
+y[53] = /forceset/glut_min1_r/fiber_length
+y[54] = /forceset/glut_min2_r/activation
+y[55] = /forceset/glut_min2_r/fiber_length
+y[56] = /forceset/glut_min3_r/activation
+y[57] = /forceset/glut_min3_r/fiber_length
+y[58] = /forceset/semimem_r/activation
+y[59] = /forceset/semimem_r/fiber_length
+y[60] = /forceset/semiten_r/activation
+y[61] = /forceset/semiten_r/fiber_length
+y[62] = /forceset/bifemlh_r/activation
+y[63] = /forceset/bifemlh_r/fiber_length
+y[64] = /forceset/bifemsh_r/activation
+y[65] = /forceset/bifemsh_r/fiber_length
+y[66] = /forceset/sar_r/activation
+y[67] = /forceset/sar_r/fiber_length
+y[68] = /forceset/add_long_r/activation
+y[69] = /forceset/add_long_r/fiber_length
+y[70] = /forceset/add_brev_r/activation
+y[71] = /forceset/add_brev_r/fiber_length
+y[72] = /forceset/add_mag1_r/activation
+y[73] = /forceset/add_mag1_r/fiber_length
+y[74] = /forceset/add_mag2_r/activation
+y[75] = /forceset/add_mag2_r/fiber_length
+y[76] = /forceset/add_mag3_r/activation
+y[77] = /forceset/add_mag3_r/fiber_length
+y[78] = /forceset/tfl_r/activation
+y[79] = /forceset/tfl_r/fiber_length
+y[80] = /forceset/pect_r/activation
+y[81] = /forceset/pect_r/fiber_length
+y[82] = /forceset/grac_r/activation
+y[83] = /forceset/grac_r/fiber_length
+y[84] = /forceset/glut_max1_r/activation
+y[85] = /forceset/glut_max1_r/fiber_length
+y[86] = /forceset/glut_max2_r/activation
+y[87] = /forceset/glut_max2_r/fiber_length
+y[88] = /forceset/glut_max3_r/activation
+y[89] = /forceset/glut_max3_r/fiber_length
+y[90] = /forceset/iliacus_r/activation
+y[91] = /forceset/iliacus_r/fiber_length
+y[92] = /forceset/psoas_r/activation
+y[93] = /forceset/psoas_r/fiber_length
+y[94] = /forceset/quad_fem_r/activation
+y[95] = /forceset/quad_fem_r/fiber_length
+y[96] = /forceset/gem_r/activation
+y[97] = /forceset/gem_r/fiber_length
+y[98] = /forceset/peri_r/activation
+y[99] = /forceset/peri_r/fiber_length
+y[100] = /forceset/rect_fem_r/activation
+y[101] = /forceset/rect_fem_r/fiber_length
+y[102] = /forceset/vas_med_r/activation
+y[103] = /forceset/vas_med_r/fiber_length
+y[104] = /forceset/vas_int_r/activation
+y[105] = /forceset/vas_int_r/fiber_length
+y[106] = /forceset/vas_lat_r/activation
+y[107] = /forceset/vas_lat_r/fiber_length
+y[108] = /forceset/med_gas_r/activation
+y[109] = /forceset/med_gas_r/fiber_length
+y[110] = /forceset/lat_gas_r/activation
+y[111] = /forceset/lat_gas_r/fiber_length
+y[112] = /forceset/soleus_r/activation
+y[113] = /forceset/soleus_r/fiber_length
+y[114] = /forceset/tib_post_r/activation
+y[115] = /forceset/tib_post_r/fiber_length
+y[116] = /forceset/flex_dig_r/activation
+y[117] = /forceset/flex_dig_r/fiber_length
+y[118] = /forceset/flex_hal_r/activation
+y[119] = /forceset/flex_hal_r/fiber_length
+y[120] = /forceset/tib_ant_r/activation
+y[121] = /forceset/tib_ant_r/fiber_length
+y[122] = /forceset/per_brev_r/activation
+y[123] = /forceset/per_brev_r/fiber_length
+y[124] = /forceset/per_long_r/activation
+y[125] = /forceset/per_long_r/fiber_length
+y[126] = /forceset/per_tert_r/activation
+y[127] = /forceset/per_tert_r/fiber_length
+y[128] = /forceset/ext_dig_r/activation
+y[129] = /forceset/ext_dig_r/fiber_length
+y[130] = /forceset/ext_hal_r/activation
+y[131] = /forceset/ext_hal_r/fiber_length
+y[132] = /forceset/glut_med1_l/activation
+y[133] = /forceset/glut_med1_l/fiber_length
+y[134] = /forceset/glut_med2_l/activation
+y[135] = /forceset/glut_med2_l/fiber_length
+y[136] = /forceset/glut_med3_l/activation
+y[137] = /forceset/glut_med3_l/fiber_length
+y[138] = /forceset/glut_min1_l/activation
+y[139] = /forceset/glut_min1_l/fiber_length
+y[140] = /forceset/glut_min2_l/activation
+y[141] = /forceset/glut_min2_l/fiber_length
+y[142] = /forceset/glut_min3_l/activation
+y[143] = /forceset/glut_min3_l/fiber_length
+y[144] = /forceset/semimem_l/activation
+y[145] = /forceset/semimem_l/fiber_length
+y[146] = /forceset/semiten_l/activation
+y[147] = /forceset/semiten_l/fiber_length
+y[148] = /forceset/bifemlh_l/activation
+y[149] = /forceset/bifemlh_l/fiber_length
+y[150] = /forceset/bifemsh_l/activation
+y[151] = /forceset/bifemsh_l/fiber_length
+y[152] = /forceset/sar_l/activation
+y[153] = /forceset/sar_l/fiber_length
+y[154] = /forceset/add_long_l/activation
+y[155] = /forceset/add_long_l/fiber_length
+y[156] = /forceset/add_brev_l/activation
+y[157] = /forceset/add_brev_l/fiber_length
+y[158] = /forceset/add_mag1_l/activation
+y[159] = /forceset/add_mag1_l/fiber_length
+y[160] = /forceset/add_mag2_l/activation
+y[161] = /forceset/add_mag2_l/fiber_length
+y[162] = /forceset/add_mag3_l/activation
+y[163] = /forceset/add_mag3_l/fiber_length
+y[164] = /forceset/tfl_l/activation
+y[165] = /forceset/tfl_l/fiber_length
+y[166] = /forceset/pect_l/activation
+y[167] = /forceset/pect_l/fiber_length
+y[168] = /forceset/grac_l/activation
+y[169] = /forceset/grac_l/fiber_length
+y[170] = /forceset/glut_max1_l/activation
+y[171] = /forceset/glut_max1_l/fiber_length
+y[172] = /forceset/glut_max2_l/activation
+y[173] = /forceset/glut_max2_l/fiber_length
+y[174] = /forceset/glut_max3_l/activation
+y[175] = /forceset/glut_max3_l/fiber_length
+y[176] = /forceset/iliacus_l/activation
+y[177] = /forceset/iliacus_l/fiber_length
+y[178] = /forceset/psoas_l/activation
+y[179] = /forceset/psoas_l/fiber_length
+y[180] = /forceset/quad_fem_l/activation
+y[181] = /forceset/quad_fem_l/fiber_length
+y[182] = /forceset/gem_l/activation
+y[183] = /forceset/gem_l/fiber_length
+y[184] = /forceset/peri_l/activation
+y[185] = /forceset/peri_l/fiber_length
+y[186] = /forceset/rect_fem_l/activation
+y[187] = /forceset/rect_fem_l/fiber_length
+y[188] = /forceset/vas_med_l/activation
+y[189] = /forceset/vas_med_l/fiber_length
+y[190] = /forceset/vas_int_l/activation
+y[191] = /forceset/vas_int_l/fiber_length
+y[192] = /forceset/vas_lat_l/activation
+y[193] = /forceset/vas_lat_l/fiber_length
+y[194] = /forceset/med_gas_l/activation
+y[195] = /forceset/med_gas_l/fiber_length
+y[196] = /forceset/lat_gas_l/activation
+y[197] = /forceset/lat_gas_l/fiber_length
+y[198] = /forceset/soleus_l/activation
+y[199] = /forceset/soleus_l/fiber_length
+y[200] = /forceset/tib_post_l/activation
+y[201] = /forceset/tib_post_l/fiber_length
+y[202] = /forceset/flex_dig_l/activation
+y[203] = /forceset/flex_dig_l/fiber_length
+y[204] = /forceset/flex_hal_l/activation
+y[205] = /forceset/flex_hal_l/fiber_length
+y[206] = /forceset/tib_ant_l/activation
+y[207] = /forceset/tib_ant_l/fiber_length
+y[208] = /forceset/per_brev_l/activation
+y[209] = /forceset/per_brev_l/fiber_length
+y[210] = /forceset/per_long_l/activation
+y[211] = /forceset/per_long_l/fiber_length
+y[212] = /forceset/per_tert_l/activation
+y[213] = /forceset/per_tert_l/fiber_length
+y[214] = /forceset/ext_dig_l/activation
+y[215] = /forceset/ext_dig_l/fiber_length
+y[216] = /forceset/ext_hal_l/activation
+y[217] = /forceset/ext_hal_l/fiber_length
+y[218] = /forceset/ercspn_r/activation
+y[219] = /forceset/ercspn_r/fiber_length
+y[220] = /forceset/ercspn_l/activation
+y[221] = /forceset/ercspn_l/fiber_length
+y[222] = /forceset/intobl_r/activation
+y[223] = /forceset/intobl_r/fiber_length
+y[224] = /forceset/intobl_l/activation
+y[225] = /forceset/intobl_l/fiber_length
+y[226] = /forceset/extobl_r/activation
+y[227] = /forceset/extobl_r/fiber_length
+y[228] = /forceset/extobl_l/activation
+y[229] = /forceset/extobl_l/fiber_length
+
+[2025-10-11 22:45:18.393] [info] Integrating from 0.0 to 5.0.
+[2025-10-11 22:45:21.465] [error] ForwardTool::run() caught an exception: 
+ Operation Aborted
+[2025-10-12 00:58:58.389] [info] No external loads will be applied (external loads file not specified).
+[2025-10-12 00:58:58.400] [info] Executing the analyses from 0.0 to 99.0...
+[2025-10-12 00:58:58.407] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.439] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.442] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.446] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.449] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.452] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.455] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.459] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.461] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.464] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.466] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.468] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.471] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.474] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.476] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.479] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.481] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.483] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.486] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.489] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.491] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.494] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.496] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.499] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.501] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.503] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.507] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.509] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.512] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.514] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.517] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.519] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.522] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 00:58:58.524] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 15:50:31.146] [info] No external loads will be applied (external loads file not specified).
+[2025-10-12 15:50:31.153] [info] Executing the analyses from 0.0 to 99.0...
+[2025-10-12 16:00:25.978] [info] No external loads will be applied (external loads file not specified).
+[2025-10-12 16:00:25.979] [info] Executing the analyses from 0.0 to 99.0...
+[2025-10-12 16:00:25.984] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.002] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.006] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.009] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.012] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.016] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.019] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.022] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.025] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.028] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.031] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.037] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.042] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.045] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.049] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.054] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.058] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.063] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.067] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.071] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.074] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.079] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.084] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.088] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.091] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.096] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.100] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.104] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.107] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.110] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.114] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.119] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.122] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:00:26.125] [warning] Thelen2003Muscle initialization: 'semimem_r' is at its minimum fiber length of 0.0208098.
+[2025-10-12 16:21:44.345] [info] Loaded model 3DGaitModel2392 from file C:\Users\natha\Documents\OpenSim\4.5\Models\Gait2392_Simbody\gait2392_simbody.osim
+[2025-10-12 16:22:08.263] [info] Storage: read data file = C:\Users\natha\Documents\OpenSim\4.5\Models\Gait2392_Simbody\Tutorial1\normal.mot (nr=51 nc=18)
+[2025-10-12 16:23:48.847] [info] Loaded model 3DGaitModel2392 from file C:\Users\natha\Documents\OpenSim\4.5\Models\Gait2392_Simbody\gait2392_simbody.osim
+[2025-10-12 16:24:31.488] [info] Storage: read data file = C:\Users\natha\Documents\OpenSim\4.5\Models\Gait2392_Simbody\Tutorial1\crouch1.mot (nr=120 nc=18)
+[2025-10-12 16:50:24.528] [warning] Running tool Crouch...
+[2025-10-12 16:50:24.533] [info] No external loads will be applied (external loads file not specified).
+[2025-10-12 16:50:24.560] [cout] [info] MODEL: Crouch
+
+numStates = 230
+numCoordinates = 23
+numSpeeds = 23
+numActuators = 92
+numBodies = 12
+numConstraints = 0
+numProbes = 0
+
+ANALYSES (total: 3)
+analysis[0] = MuscleAnalysis
+analysis[1] = Un-named analysis.
+analysis[2] = Un-named analysis.
+
+BODIES (total: 12)
+body[0] = pelvis. mass: 11.777
+              moments of inertia:  ~[0.1028,0.0871,0.0579]
+              products of inertia: ~[0,0,0]
+body[1] = femur_r. mass: 9.3014
+              moments of inertia:  ~[0.1339,0.0351,0.1412]
+              products of inertia: ~[0,0,0]
+body[2] = tibia_r. mass: 3.7075
+              moments of inertia:  ~[0.0504,0.0051,0.0511]
+              products of inertia: ~[0,0,0]
+body[3] = talus_r. mass: 0.1
+              moments of inertia:  ~[0.001,0.001,0.001]
+              products of inertia: ~[0,0,0]
+body[4] = calcn_r. mass: 1.25
+              moments of inertia:  ~[0.0014,0.0039,0.0041]
+              products of inertia: ~[0,0,0]
+body[5] = toes_r. mass: 0.2166
+              moments of inertia:  ~[0.0001,0.0002,0.0001]
+              products of inertia: ~[0,0,0]
+body[6] = femur_l. mass: 9.3014
+              moments of inertia:  ~[0.1339,0.0351,0.1412]
+              products of inertia: ~[0,0,0]
+body[7] = tibia_l. mass: 3.7075
+              moments of inertia:  ~[0.0504,0.0051,0.0511]
+              products of inertia: ~[0,0,0]
+body[8] = talus_l. mass: 0.1
+              moments of inertia:  ~[0.001,0.001,0.001]
+              products of inertia: ~[0,0,0]
+body[9] = calcn_l. mass: 1.25
+              moments of inertia:  ~[0.0014,0.0039,0.0041]
+              products of inertia: ~[0,0,0]
+body[10] = toes_l. mass: 0.2166
+              moments of inertia:  ~[0.0001,0.0002,0.0001]
+              products of inertia: ~[0,0,0]
+body[11] = torso. mass: 34.2366
+              moments of inertia:  ~[1.4745,0.7555,1.4314]
+              products of inertia: ~[0,0,0]
+
+JOINTS (total: 12)
+joint[0] = ground_pelvis. parent: ground_offset, child: pelvis_offset
+joint[1] = hip_r. parent: pelvis_offset, child: femur_r_offset
+joint[2] = knee_r. parent: femur_r_offset, child: tibia_r_offset
+joint[3] = ankle_r. parent: tibia_r_offset, child: talus_r_offset
+joint[4] = subtalar_r. parent: talus_r_offset, child: calcn_r_offset
+joint[5] = mtp_r. parent: calcn_r_offset, child: toes_r_offset
+joint[6] = hip_l. parent: pelvis_offset, child: femur_l_offset
+joint[7] = knee_l. parent: femur_l_offset, child: tibia_l_offset
+joint[8] = ankle_l. parent: tibia_l_offset, child: talus_l_offset
+joint[9] = subtalar_l. parent: talus_l_offset, child: calcn_l_offset
+joint[10] = mtp_l. parent: calcn_l_offset, child: toes_l_offset
+joint[11] = back. parent: pelvis_offset, child: torso_offset
+
+ACTUATORS (total: 92)
+actuator[0] = glut_med1_r
+actuator[1] = glut_med2_r
+actuator[2] = glut_med3_r
+actuator[3] = glut_min1_r
+actuator[4] = glut_min2_r
+actuator[5] = glut_min3_r
+actuator[6] = semimem_r
+actuator[7] = semiten_r
+actuator[8] = bifemlh_r
+actuator[9] = bifemsh_r
+actuator[10] = sar_r
+actuator[11] = add_long_r
+actuator[12] = add_brev_r
+actuator[13] = add_mag1_r
+actuator[14] = add_mag2_r
+actuator[15] = add_mag3_r
+actuator[16] = tfl_r
+actuator[17] = pect_r
+actuator[18] = grac_r
+actuator[19] = glut_max1_r
+actuator[20] = glut_max2_r
+actuator[21] = glut_max3_r
+actuator[22] = iliacus_r
+actuator[23] = psoas_r
+actuator[24] = quad_fem_r
+actuator[25] = gem_r
+actuator[26] = peri_r
+actuator[27] = rect_fem_r
+actuator[28] = vas_med_r
+actuator[29] = vas_int_r
+actuator[30] = vas_lat_r
+actuator[31] = med_gas_r
+actuator[32] = lat_gas_r
+actuator[33] = soleus_r
+actuator[34] = tib_post_r
+actuator[35] = flex_dig_r
+actuator[36] = flex_hal_r
+actuator[37] = tib_ant_r
+actuator[38] = per_brev_r
+actuator[39] = per_long_r
+actuator[40] = per_tert_r
+actuator[41] = ext_dig_r
+actuator[42] = ext_hal_r
+actuator[43] = glut_med1_l
+actuator[44] = glut_med2_l
+actuator[45] = glut_med3_l
+actuator[46] = glut_min1_l
+actuator[47] = glut_min2_l
+actuator[48] = glut_min3_l
+actuator[49] = semimem_l
+actuator[50] = semiten_l
+actuator[51] = bifemlh_l
+actuator[52] = bifemsh_l
+actuator[53] = sar_l
+actuator[54] = add_long_l
+actuator[55] = add_brev_l
+actuator[56] = add_mag1_l
+actuator[57] = add_mag2_l
+actuator[58] = add_mag3_l
+actuator[59] = tfl_l
+actuator[60] = pect_l
+actuator[61] = grac_l
+actuator[62] = glut_max1_l
+actuator[63] = glut_max2_l
+actuator[64] = glut_max3_l
+actuator[65] = iliacus_l
+actuator[66] = psoas_l
+actuator[67] = quad_fem_l
+actuator[68] = gem_l
+actuator[69] = peri_l
+actuator[70] = rect_fem_l
+actuator[71] = vas_med_l
+actuator[72] = vas_int_l
+actuator[73] = vas_lat_l
+actuator[74] = med_gas_l
+actuator[75] = lat_gas_l
+actuator[76] = soleus_l
+actuator[77] = tib_post_l
+actuator[78] = flex_dig_l
+actuator[79] = flex_hal_l
+actuator[80] = tib_ant_l
+actuator[81] = per_brev_l
+actuator[82] = per_long_l
+actuator[83] = per_tert_l
+actuator[84] = ext_dig_l
+actuator[85] = ext_hal_l
+actuator[86] = ercspn_r
+actuator[87] = ercspn_l
+actuator[88] = intobl_r
+actuator[89] = intobl_l
+actuator[90] = extobl_r
+actuator[91] = extobl_l
+
+STATES (total: 230)
+y[0] = /jointset/ground_pelvis/pelvis_tilt/value
+y[1] = /jointset/ground_pelvis/pelvis_tilt/speed
+y[2] = /jointset/ground_pelvis/pelvis_list/value
+y[3] = /jointset/ground_pelvis/pelvis_list/speed
+y[4] = /jointset/ground_pelvis/pelvis_rotation/value
+y[5] = /jointset/ground_pelvis/pelvis_rotation/speed
+y[6] = /jointset/ground_pelvis/pelvis_tx/value
+y[7] = /jointset/ground_pelvis/pelvis_tx/speed
+y[8] = /jointset/ground_pelvis/pelvis_ty/value
+y[9] = /jointset/ground_pelvis/pelvis_ty/speed
+y[10] = /jointset/ground_pelvis/pelvis_tz/value
+y[11] = /jointset/ground_pelvis/pelvis_tz/speed
+y[12] = /jointset/hip_r/hip_flexion_r/value
+y[13] = /jointset/hip_r/hip_flexion_r/speed
+y[14] = /jointset/hip_r/hip_adduction_r/value
+y[15] = /jointset/hip_r/hip_adduction_r/speed
+y[16] = /jointset/hip_r/hip_rotation_r/value
+y[17] = /jointset/hip_r/hip_rotation_r/speed
+y[18] = /jointset/knee_r/knee_angle_r/value
+y[19] = /jointset/knee_r/knee_angle_r/speed
+y[20] = /jointset/ankle_r/ankle_angle_r/value
+y[21] = /jointset/ankle_r/ankle_angle_r/speed
+y[22] = /jointset/subtalar_r/subtalar_angle_r/value
+y[23] = /jointset/subtalar_r/subtalar_angle_r/speed
+y[24] = /jointset/mtp_r/mtp_angle_r/value
+y[25] = /jointset/mtp_r/mtp_angle_r/speed
+y[26] = /jointset/hip_l/hip_flexion_l/value
+y[27] = /jointset/hip_l/hip_flexion_l/speed
+y[28] = /jointset/hip_l/hip_adduction_l/value
+y[29] = /jointset/hip_l/hip_adduction_l/speed
+y[30] = /jointset/hip_l/hip_rotation_l/value
+y[31] = /jointset/hip_l/hip_rotation_l/speed
+y[32] = /jointset/knee_l/knee_angle_l/value
+y[33] = /jointset/knee_l/knee_angle_l/speed
+y[34] = /jointset/ankle_l/ankle_angle_l/value
+y[35] = /jointset/ankle_l/ankle_angle_l/speed
+y[36] = /jointset/subtalar_l/subtalar_angle_l/value
+y[37] = /jointset/subtalar_l/subtalar_angle_l/speed
+y[38] = /jointset/mtp_l/mtp_angle_l/value
+y[39] = /jointset/mtp_l/mtp_angle_l/speed
+y[40] = /jointset/back/lumbar_extension/value
+y[41] = /jointset/back/lumbar_extension/speed
+y[42] = /jointset/back/lumbar_bending/value
+y[43] = /jointset/back/lumbar_bending/speed
+y[44] = /jointset/back/lumbar_rotation/value
+y[45] = /jointset/back/lumbar_rotation/speed
+y[46] = /forceset/glut_med1_r/activation
+y[47] = /forceset/glut_med1_r/fiber_length
+y[48] = /forceset/glut_med2_r/activation
+y[49] = /forceset/glut_med2_r/fiber_length
+y[50] = /forceset/glut_med3_r/activation
+y[51] = /forceset/glut_med3_r/fiber_length
+y[52] = /forceset/glut_min1_r/activation
+y[53] = /forceset/glut_min1_r/fiber_length
+y[54] = /forceset/glut_min2_r/activation
+y[55] = /forceset/glut_min2_r/fiber_length
+y[56] = /forceset/glut_min3_r/activation
+y[57] = /forceset/glut_min3_r/fiber_length
+y[58] = /forceset/semimem_r/activation
+y[59] = /forceset/semimem_r/fiber_length
+y[60] = /forceset/semiten_r/activation
+y[61] = /forceset/semiten_r/fiber_length
+y[62] = /forceset/bifemlh_r/activation
+y[63] = /forceset/bifemlh_r/fiber_length
+y[64] = /forceset/bifemsh_r/activation
+y[65] = /forceset/bifemsh_r/fiber_length
+y[66] = /forceset/sar_r/activation
+y[67] = /forceset/sar_r/fiber_length
+y[68] = /forceset/add_long_r/activation
+y[69] = /forceset/add_long_r/fiber_length
+y[70] = /forceset/add_brev_r/activation
+y[71] = /forceset/add_brev_r/fiber_length
+y[72] = /forceset/add_mag1_r/activation
+y[73] = /forceset/add_mag1_r/fiber_length
+y[74] = /forceset/add_mag2_r/activation
+y[75] = /forceset/add_mag2_r/fiber_length
+y[76] = /forceset/add_mag3_r/activation
+y[77] = /forceset/add_mag3_r/fiber_length
+y[78] = /forceset/tfl_r/activation
+y[79] = /forceset/tfl_r/fiber_length
+y[80] = /forceset/pect_r/activation
+y[81] = /forceset/pect_r/fiber_length
+y[82] = /forceset/grac_r/activation
+y[83] = /forceset/grac_r/fiber_length
+y[84] = /forceset/glut_max1_r/activation
+y[85] = /forceset/glut_max1_r/fiber_length
+y[86] = /forceset/glut_max2_r/activation
+y[87] = /forceset/glut_max2_r/fiber_length
+y[88] = /forceset/glut_max3_r/activation
+y[89] = /forceset/glut_max3_r/fiber_length
+y[90] = /forceset/iliacus_r/activation
+y[91] = /forceset/iliacus_r/fiber_length
+y[92] = /forceset/psoas_r/activation
+y[93] = /forceset/psoas_r/fiber_length
+y[94] = /forceset/quad_fem_r/activation
+y[95] = /forceset/quad_fem_r/fiber_length
+y[96] = /forceset/gem_r/activation
+y[97] = /forceset/gem_r/fiber_length
+y[98] = /forceset/peri_r/activation
+y[99] = /forceset/peri_r/fiber_length
+y[100] = /forceset/rect_fem_r/activation
+y[101] = /forceset/rect_fem_r/fiber_length
+y[102] = /forceset/vas_med_r/activation
+y[103] = /forceset/vas_med_r/fiber_length
+y[104] = /forceset/vas_int_r/activation
+y[105] = /forceset/vas_int_r/fiber_length
+y[106] = /forceset/vas_lat_r/activation
+y[107] = /forceset/vas_lat_r/fiber_length
+y[108] = /forceset/med_gas_r/activation
+y[109] = /forceset/med_gas_r/fiber_length
+y[110] = /forceset/lat_gas_r/activation
+y[111] = /forceset/lat_gas_r/fiber_length
+y[112] = /forceset/soleus_r/activation
+y[113] = /forceset/soleus_r/fiber_length
+y[114] = /forceset/tib_post_r/activation
+y[115] = /forceset/tib_post_r/fiber_length
+y[116] = /forceset/flex_dig_r/activation
+y[117] = /forceset/flex_dig_r/fiber_length
+y[118] = /forceset/flex_hal_r/activation
+y[119] = /forceset/flex_hal_r/fiber_length
+y[120] = /forceset/tib_ant_r/activation
+y[121] = /forceset/tib_ant_r/fiber_length
+y[122] = /forceset/per_brev_r/activation
+y[123] = /forceset/per_brev_r/fiber_length
+y[124] = /forceset/per_long_r/activation
+y[125] = /forceset/per_long_r/fiber_length
+y[126] = /forceset/per_tert_r/activation
+y[127] = /forceset/per_tert_r/fiber_length
+y[128] = /forceset/ext_dig_r/activation
+y[129] = /forceset/ext_dig_r/fiber_length
+y[130] = /forceset/ext_hal_r/activation
+y[131] = /forceset/ext_hal_r/fiber_length
+y[132] = /forceset/glut_med1_l/activation
+y[133] = /forceset/glut_med1_l/fiber_length
+y[134] = /forceset/glut_med2_l/activation
+y[135] = /forceset/glut_med2_l/fiber_length
+y[136] = /forceset/glut_med3_l/activation
+y[137] = /forceset/glut_med3_l/fiber_length
+y[138] = /forceset/glut_min1_l/activation
+y[139] = /forceset/glut_min1_l/fiber_length
+y[140] = /forceset/glut_min2_l/activation
+y[141] = /forceset/glut_min2_l/fiber_length
+y[142] = /forceset/glut_min3_l/activation
+y[143] = /forceset/glut_min3_l/fiber_length
+y[144] = /forceset/semimem_l/activation
+y[145] = /forceset/semimem_l/fiber_length
+y[146] = /forceset/semiten_l/activation
+y[147] = /forceset/semiten_l/fiber_length
+y[148] = /forceset/bifemlh_l/activation
+y[149] = /forceset/bifemlh_l/fiber_length
+y[150] = /forceset/bifemsh_l/activation
+y[151] = /forceset/bifemsh_l/fiber_length
+y[152] = /forceset/sar_l/activation
+y[153] = /forceset/sar_l/fiber_length
+y[154] = /forceset/add_long_l/activation
+y[155] = /forceset/add_long_l/fiber_length
+y[156] = /forceset/add_brev_l/activation
+y[157] = /forceset/add_brev_l/fiber_length
+y[158] = /forceset/add_mag1_l/activation
+y[159] = /forceset/add_mag1_l/fiber_length
+y[160] = /forceset/add_mag2_l/activation
+y[161] = /forceset/add_mag2_l/fiber_length
+y[162] = /forceset/add_mag3_l/activation
+y[163] = /forceset/add_mag3_l/fiber_length
+y[164] = /forceset/tfl_l/activation
+y[165] = /forceset/tfl_l/fiber_length
+y[166] = /forceset/pect_l/activation
+y[167] = /forceset/pect_l/fiber_length
+y[168] = /forceset/grac_l/activation
+y[169] = /forceset/grac_l/fiber_length
+y[170] = /forceset/glut_max1_l/activation
+y[171] = /forceset/glut_max1_l/fiber_length
+y[172] = /forceset/glut_max2_l/activation
+y[173] = /forceset/glut_max2_l/fiber_length
+y[174] = /forceset/glut_max3_l/activation
+y[175] = /forceset/glut_max3_l/fiber_length
+y[176] = /forceset/iliacus_l/activation
+y[177] = /forceset/iliacus_l/fiber_length
+y[178] = /forceset/psoas_l/activation
+y[179] = /forceset/psoas_l/fiber_length
+y[180] = /forceset/quad_fem_l/activation
+y[181] = /forceset/quad_fem_l/fiber_length
+y[182] = /forceset/gem_l/activation
+y[183] = /forceset/gem_l/fiber_length
+y[184] = /forceset/peri_l/activation
+y[185] = /forceset/peri_l/fiber_length
+y[186] = /forceset/rect_fem_l/activation
+y[187] = /forceset/rect_fem_l/fiber_length
+y[188] = /forceset/vas_med_l/activation
+y[189] = /forceset/vas_med_l/fiber_length
+y[190] = /forceset/vas_int_l/activation
+y[191] = /forceset/vas_int_l/fiber_length
+y[192] = /forceset/vas_lat_l/activation
+y[193] = /forceset/vas_lat_l/fiber_length
+y[194] = /forceset/med_gas_l/activation
+y[195] = /forceset/med_gas_l/fiber_length
+y[196] = /forceset/lat_gas_l/activation
+y[197] = /forceset/lat_gas_l/fiber_length
+y[198] = /forceset/soleus_l/activation
+y[199] = /forceset/soleus_l/fiber_length
+y[200] = /forceset/tib_post_l/activation
+y[201] = /forceset/tib_post_l/fiber_length
+y[202] = /forceset/flex_dig_l/activation
+y[203] = /forceset/flex_dig_l/fiber_length
+y[204] = /forceset/flex_hal_l/activation
+y[205] = /forceset/flex_hal_l/fiber_length
+y[206] = /forceset/tib_ant_l/activation
+y[207] = /forceset/tib_ant_l/fiber_length
+y[208] = /forceset/per_brev_l/activation
+y[209] = /forceset/per_brev_l/fiber_length
+y[210] = /forceset/per_long_l/activation
+y[211] = /forceset/per_long_l/fiber_length
+y[212] = /forceset/per_tert_l/activation
+y[213] = /forceset/per_tert_l/fiber_length
+y[214] = /forceset/ext_dig_l/activation
+y[215] = /forceset/ext_dig_l/fiber_length
+y[216] = /forceset/ext_hal_l/activation
+y[217] = /forceset/ext_hal_l/fiber_length
+y[218] = /forceset/ercspn_r/activation
+y[219] = /forceset/ercspn_r/fiber_length
+y[220] = /forceset/ercspn_l/activation
+y[221] = /forceset/ercspn_l/fiber_length
+y[222] = /forceset/intobl_r/activation
+y[223] = /forceset/intobl_r/fiber_length
+y[224] = /forceset/intobl_l/activation
+y[225] = /forceset/intobl_l/fiber_length
+y[226] = /forceset/extobl_r/activation
+y[227] = /forceset/extobl_r/fiber_length
+y[228] = /forceset/extobl_l/activation
+y[229] = /forceset/extobl_l/fiber_length
+
+[2025-10-12 16:50:24.561] [info] Integrating from 0.0 to 5.0.
+[2025-10-12 16:50:27.784] [error] ForwardTool::run() caught an exception: 
+ Operation Aborted
+[2025-10-12 17:02:27.213] [info] No external loads will be applied (external loads file not specified).
+[2025-10-12 17:02:27.217] [info] Executing the analyses from 0.0 to 1.0...
+[2025-10-12 17:03:13.261] [info] No external loads will be applied (external loads file not specified).
+[2025-10-12 17:03:13.261] [info] Executing the analyses from 0.0 to 1.0...
+[2025-10-12 17:12:15.927] [info] Storage: read data file = C:\Users\natha\Documents\OpenSim\4.5\Models\Gait2392_Simbody\Tutorial1\crouch2.mot (nr=120 nc=18)
+[2025-10-12 17:12:20.234] [info] Storage: read data file = C:\Users\natha\Documents\OpenSim\4.5\Models\Gait2392_Simbody\Tutorial1\crouch3.mot (nr=120 nc=18)
+[2025-10-12 17:12:25.907] [info] Storage: read data file = C:\Users\natha\Documents\OpenSim\4.5\Models\Gait2392_Simbody\Tutorial1\crouch4.mot (nr=101 nc=18)
+[2025-10-12 17:12:55.779] [info] No external loads will be applied (external loads file not specified).
+[2025-10-12 17:12:55.779] [info] Executing the analyses from 0.0 to 1.0...
+[2025-10-12 17:13:01.103] [info] No external loads will be applied (external loads file not specified).
+[2025-10-12 17:13:01.103] [info] Executing the analyses from 0.0 to 1.0...
+[2025-10-12 17:13:05.350] [info] No external loads will be applied (external loads file not specified).
+[2025-10-12 17:13:05.350] [info] Executing the analyses from 0.0 to 1.0...

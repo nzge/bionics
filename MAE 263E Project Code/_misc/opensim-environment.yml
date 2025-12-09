@@ -1,0 +1,16 @@
+name: opensim       # name of the environment
+channels:
+  - opensim-org          # OpenSim channel
+  - conda-forge          # For dependencies not in OpenSim channel
+  - defaults             # Default conda channel
+dependencies:
+  - python=3.12          # Python version
+  - opensim=4.5.2        # OpenSim version
+  - numpy                # Ensure numpy is installed
+  - matplotlib           # Optional: for plotting
+  - scipy                # Optional: for scientific computations
+  - pip                  # Optional, in case you need pip packages
+  - cma                 # CMA-ES optimization package
+  - pip:
+      - jupyterlab       # Optional: install Jupyter Lab via pip
+      - pandas           # Optional: for data manipulation 

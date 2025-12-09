@@ -1,0 +1,3 @@
+ cd C:\Users\natha\Desktop\UCLA\_Grad\2025-2026\'FALL 2025'\'MAE 263E'\'MAE 263E Final Project'\'MAE 263E Project Code'
+
+ conda env update -f opensim-environment.yml --prune
